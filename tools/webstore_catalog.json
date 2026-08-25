@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "reader-mode",
+      "name": "Reader Focus",
+      "description": "Simplifies article pages and increases text readability.",
+      "category": "productivity",
+      "version": "1.0.0",
+      "manifest": "local://reader-focus",
+      "package_hash": "91c736db98c98b34eb3d232a098955c42f7021f6cfa61ecc8fe8e72a76c98403",
+      "script": "webstore_packages/reader-focus/userscript.js",
+      "style": "webstore_packages/reader-focus/userstyle.css"
+    },
+    {
+      "id": "clean-video",
+      "name": "Clean Video Controls",
+      "description": "Adds subtle keyboard helper hints on video pages.",
+      "category": "media",
+      "version": "1.0.0",
+      "manifest": "local://clean-video",
+      "package_hash": "0074d325d63977eba50becfa6fc5126a8aa76466ca9f30ae3f0b1c69e5eeafe7",
+      "script": "webstore_packages/clean-video/userscript.js",
+      "style": ""
+    }
+  ]
+}

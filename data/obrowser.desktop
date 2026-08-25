@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=OBrowser
+Exec=obrowser
+Type=Application
+Categories=Network;WebBrowser;

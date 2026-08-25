@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#ffa500"/>
+    </linearGradient>
+    <linearGradient id="ob" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#ffe66d"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.15)"/>
+    </pattern>
+  </defs>
+  
+  <!-- پس‌زمینه -->
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <rect width="128" height="128" rx="28" fill="url(#dots)"/>
+  
+  <!-- حلقه چرخان دور O -->
+  <circle cx="48" cy="64" r="30" stroke="rgba(255,255,255,0.15)" stroke-width="2" fill="none" stroke-dasharray="8 8">
+    <animateTransform attributeName="transform" type="rotate" from="0 48 64" to="360 48 64" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- O -->
+  <circle cx="48" cy="64" r="24" stroke="url(#ob)" stroke-width="7" fill="none"/>
+  <circle cx="48" cy="64" r="20" stroke="url(#ob)" stroke-width="2" fill="none" stroke-dasharray="3 4" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-50" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- حلقه چرخان دور B -->
+  <circle cx="85" cy="64" r="28" stroke="rgba(255,255,255,0.1)" stroke-width="2" fill="none" stroke-dasharray="6 10">
+    <animateTransform attributeName="transform" type="rotate" from="0 85 64" to="360 85 64" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- B -->
+  <path d="M78 40h14a12 12 0 0 1 0 24h-14" stroke="url(#ob)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M78 40h14a12 12 0 0 1 0 24h-14" stroke="url(#ob)" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="3 4" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-50" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M78 64h14a12 12 0 0 1 0 24h-14" stroke="url(#ob)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M78 64h14a12 12 0 0 1 0 24h-14" stroke="url(#ob)" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="3 4" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-50" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M78 40v48" stroke="url(#ob)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M78 40v48" stroke="url(#ob)" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 4" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-50" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- انیمیشن چشمک‌زن نقطه‌ها -->
+  <circle cx="48" cy="64" r="28" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="none">
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="85" cy="64" r="26" stroke="rgba(255,255,255,0.15)" stroke-width="1" fill="none">
+    <animate attributeName="opacity" values="0.15;0.4;0.15" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>
