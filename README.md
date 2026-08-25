@@ -280,7 +280,7 @@ python3 -m pytest tests/test_sync_client.py -v
 ### 1. Clone
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ods2026m-boop/OBrowser
 cd OBrowser
 ```
 
